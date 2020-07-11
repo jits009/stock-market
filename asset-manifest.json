@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/stock-market/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/stock-market/static/js/main.81ec47f3.chunk.js",
+    "main.js.map": "/stock-market/static/js/main.81ec47f3.chunk.js.map",
+    "runtime-main.js": "/stock-market/static/js/runtime-main.ed923783.js",
+    "runtime-main.js.map": "/stock-market/static/js/runtime-main.ed923783.js.map",
+    "static/js/2.2ff135d5.chunk.js": "/stock-market/static/js/2.2ff135d5.chunk.js",
+    "static/js/2.2ff135d5.chunk.js.map": "/stock-market/static/js/2.2ff135d5.chunk.js.map",
+    "index.html": "/stock-market/index.html",
+    "precache-manifest.aa8b09766506381535d2b8dec6b7053f.js": "/stock-market/precache-manifest.aa8b09766506381535d2b8dec6b7053f.js",
+    "service-worker.js": "/stock-market/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/stock-market/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.2ff135d5.chunk.js.LICENSE.txt": "/stock-market/static/js/2.2ff135d5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed923783.js",
+    "static/js/2.2ff135d5.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.81ec47f3.chunk.js"
+  ]
+}
