@@ -1,0 +1,1 @@
+export const STOCK_ENDPOINT = "ws://stocks.mnet.website";
