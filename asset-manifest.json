@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/stock-market/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/stock-market/static/js/main.81ec47f3.chunk.js",
-    "main.js.map": "/stock-market/static/js/main.81ec47f3.chunk.js.map",
+    "main.css": "/stock-market/static/css/main.2c8c3086.chunk.css",
+    "main.js": "/stock-market/static/js/main.b47662cb.chunk.js",
+    "main.js.map": "/stock-market/static/js/main.b47662cb.chunk.js.map",
     "runtime-main.js": "/stock-market/static/js/runtime-main.ed923783.js",
     "runtime-main.js.map": "/stock-market/static/js/runtime-main.ed923783.js.map",
-    "static/js/2.2ff135d5.chunk.js": "/stock-market/static/js/2.2ff135d5.chunk.js",
-    "static/js/2.2ff135d5.chunk.js.map": "/stock-market/static/js/2.2ff135d5.chunk.js.map",
+    "static/js/2.8d10f81f.chunk.js": "/stock-market/static/js/2.8d10f81f.chunk.js",
+    "static/js/2.8d10f81f.chunk.js.map": "/stock-market/static/js/2.8d10f81f.chunk.js.map",
     "index.html": "/stock-market/index.html",
-    "precache-manifest.aa8b09766506381535d2b8dec6b7053f.js": "/stock-market/precache-manifest.aa8b09766506381535d2b8dec6b7053f.js",
+    "precache-manifest.25b2bc2e40fb7714fde9f6004065a18d.js": "/stock-market/precache-manifest.25b2bc2e40fb7714fde9f6004065a18d.js",
     "service-worker.js": "/stock-market/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/stock-market/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.2ff135d5.chunk.js.LICENSE.txt": "/stock-market/static/js/2.2ff135d5.chunk.js.LICENSE.txt"
+    "static/css/main.2c8c3086.chunk.css.map": "/stock-market/static/css/main.2c8c3086.chunk.css.map",
+    "static/js/2.8d10f81f.chunk.js.LICENSE.txt": "/stock-market/static/js/2.8d10f81f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ed923783.js",
-    "static/js/2.2ff135d5.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.81ec47f3.chunk.js"
+    "static/js/2.8d10f81f.chunk.js",
+    "static/css/main.2c8c3086.chunk.css",
+    "static/js/main.b47662cb.chunk.js"
   ]
 }
