@@ -1,8 +1,7 @@
 import { UPDATE_STOCK } from '../actions/types'
 
 const initialState = {
-    lastStocks: [],
-    currentStocks: []
+    stocks: []
 }
 
 export default (state = initialState, action) => {
@@ -10,6 +9,7 @@ export default (state = initialState, action) => {
         case UPDATE_STOCK:
             return {
                 ...state,
+                stocks: action.stocks
             };
         default:
             return state;

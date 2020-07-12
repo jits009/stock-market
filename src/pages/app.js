@@ -1,24 +1,46 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import socketIOClient from "socket.io-client";
+import moment from 'moment';
 import { STOCK_ENDPOINT } from '../services/constants';
+import { updateStockMarket } from '../store/actions/stock';
+import './style.css';
 
 class App extends Component {
 
 	componentDidMount() {
-		const socket = socketIOClient(STOCK_ENDPOINT);
-		socket.on("data", data => console.log('data: ', data))
+		this.initializeSocket()
+	}
+
+	initializeSocket() {
+		const socket = new WebSocket(STOCK_ENDPOINT);
+
+		// Listen for messages
+		socket.addEventListener('message', this.props.updateStockMarket);
+
+		// Listen for error
+		socket.addEventListener('error', (error) => {
+			console.log('Something went wrong', error);
+		});
+	}
+
+	componentWillUnmount() {
+		
 	}
 
 	renderStocks = () => {
-		return (
-			<tr>
-				<th scope="row">1</th>
-				<td>Mark</td>
-				<td>Otto</td>
-				<td>Otto</td>
-			</tr>
-		)
+		const { stocks } = this.props;
+		console.log('stocks: ', stocks);
+
+		return stocks.map((item, index) => {
+			return (
+				<tr key={item.name + index} className={item.gain ? item.gain > 0 ? 'stock-gain' : 'stock-loss' : ''}>
+					<th scope="row">{index + 1}</th>
+					<td>{item.name}</td>
+					<td>{item.price}</td>
+					<td>{moment(item.updated_at).fromNow()}</td>
+				</tr>
+			)
+		})
 	}
 
 	render() {
@@ -33,7 +55,7 @@ class App extends Component {
 					<div className="row">
 						<div className="col">
 							<div className="py-5">
-								<table className="table table-striped">
+								<table className="table table-bordered">
 									<thead>
 										<tr>
 											<th scope="col">#</th>
@@ -55,8 +77,8 @@ class App extends Component {
 	}
 }
 
-const mapStateToProps = () => ({
-
+const mapStateToProps = (state) => ({
+	stocks: state.stock.stocks
 })
 
-export default connect(mapStateToProps, {})(App);
+export default connect(mapStateToProps, { updateStockMarket })(App);
